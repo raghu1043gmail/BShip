@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<script type="text/javascript">
+    var gameBoardData =@Html.Raw(Json.Encode(Model.GameCells));
+</script>
+
+
+<div class="row">
+    <div class="col-12 board-contaniner mt-2">
+        <table class="table table-bordered  board-table mt-4">
+            <thead>
+                <tr>
+                    <td>
+                       
+                    </td>
+                    <td>
+                        A
+                    </td>
+                    <td>
+                        B
+                    </td>
+                    <td>
+                        C
+                    </td>
+                    <td>
+                        D
+                    </td>
+                    <td>
+                        E
+                    </td>
+                    <td>
+                        F
+                    </td>
+                    <td>
+                        G
+                    </td>
+                    <td>
+                        H
+                    </td>
+                    <td>
+                        I
+                    </td>
+                    <td>
+                        J
+                    </td>
+
+                </tr>
+            </thead>
+            <tbody class="board-body">
+            </tbody>
+        </table>
+    </div>
+    <div class="col-12 mt-4">
+        <a class="btn btn-success new-game">New Game</a>
+    </div>
+    <small>Clik on the cells to take shots</small>
+</div>
+
